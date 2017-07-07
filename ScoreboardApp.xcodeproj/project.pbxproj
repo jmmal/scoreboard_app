@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03FAFE021F0FAFE900F6AA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE011F0FAFE900F6AA3A /* AppDelegate.swift */; };
+		03FAFE041F0FAFE900F6AA3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE031F0FAFE900F6AA3A /* ViewController.swift */; };
+		03FAFE071F0FAFE900F6AA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAFE051F0FAFE900F6AA3A /* Main.storyboard */; };
+		03FAFE091F0FAFE900F6AA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FAFE081F0FAFE900F6AA3A /* Assets.xcassets */; };
+		03FAFE0C1F0FAFE900F6AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAFE0A1F0FAFE900F6AA3A /* LaunchScreen.storyboard */; };
+		03FAFE171F0FAFE900F6AA3A /* ScoreboardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE161F0FAFE900F6AA3A /* ScoreboardAppTests.swift */; };
+		03FAFE221F0FAFE900F6AA3A /* ScoreboardAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE211F0FAFE900F6AA3A /* ScoreboardAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03FAFE131F0FAFE900F6AA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03FAFDF61F0FAFE800F6AA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FAFDFD1F0FAFE900F6AA3A;
+			remoteInfo = ScoreboardApp;
+		};
+		03FAFE1E1F0FAFE900F6AA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03FAFDF61F0FAFE800F6AA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FAFDFD1F0FAFE900F6AA3A;
+			remoteInfo = ScoreboardApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03FAFDFE1F0FAFE900F6AA3A /* ScoreboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FAFE011F0FAFE900F6AA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03FAFE031F0FAFE900F6AA3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03FAFE061F0FAFE900F6AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03FAFE081F0FAFE900F6AA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03FAFE0B1F0FAFE900F6AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03FAFE0D1F0FAFE900F6AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FAFE121F0FAFE900F6AA3A /* ScoreboardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FAFE161F0FAFE900F6AA3A /* ScoreboardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardAppTests.swift; sourceTree = "<group>"; };
+		03FAFE181F0FAFE900F6AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FAFE1D1F0FAFE900F6AA3A /* ScoreboardAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FAFE211F0FAFE900F6AA3A /* ScoreboardAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardAppUITests.swift; sourceTree = "<group>"; };
+		03FAFE231F0FAFE900F6AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03FAFDFB1F0FAFE900F6AA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAFE0F1F0FAFE900F6AA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAFE1A1F0FAFE900F6AA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03FAFDF51F0FAFE800F6AA3A = {
+			isa = PBXGroup;
+			children = (
+				03FAFE001F0FAFE900F6AA3A /* ScoreboardApp */,
+				03FAFE151F0FAFE900F6AA3A /* ScoreboardAppTests */,
+				03FAFE201F0FAFE900F6AA3A /* ScoreboardAppUITests */,
+				03FAFDFF1F0FAFE900F6AA3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03FAFDFF1F0FAFE900F6AA3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03FAFDFE1F0FAFE900F6AA3A /* ScoreboardApp.app */,
+				03FAFE121F0FAFE900F6AA3A /* ScoreboardAppTests.xctest */,
+				03FAFE1D1F0FAFE900F6AA3A /* ScoreboardAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03FAFE001F0FAFE900F6AA3A /* ScoreboardApp */ = {
+			isa = PBXGroup;
+			children = (
+				03FAFE011F0FAFE900F6AA3A /* AppDelegate.swift */,
+				03FAFE031F0FAFE900F6AA3A /* ViewController.swift */,
+				03FAFE051F0FAFE900F6AA3A /* Main.storyboard */,
+				03FAFE081F0FAFE900F6AA3A /* Assets.xcassets */,
+				03FAFE0A1F0FAFE900F6AA3A /* LaunchScreen.storyboard */,
+				03FAFE0D1F0FAFE900F6AA3A /* Info.plist */,
+			);
+			path = ScoreboardApp;
+			sourceTree = "<group>";
+		};
+		03FAFE151F0FAFE900F6AA3A /* ScoreboardAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				03FAFE161F0FAFE900F6AA3A /* ScoreboardAppTests.swift */,
+				03FAFE181F0FAFE900F6AA3A /* Info.plist */,
+			);
+			path = ScoreboardAppTests;
+			sourceTree = "<group>";
+		};
+		03FAFE201F0FAFE900F6AA3A /* ScoreboardAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03FAFE211F0FAFE900F6AA3A /* ScoreboardAppUITests.swift */,
+				03FAFE231F0FAFE900F6AA3A /* Info.plist */,
+			);
+			path = ScoreboardAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03FAFDFD1F0FAFE900F6AA3A /* ScoreboardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FAFE261F0FAFE900F6AA3A /* Build configuration list for PBXNativeTarget "ScoreboardApp" */;
+			buildPhases = (
+				03FAFDFA1F0FAFE900F6AA3A /* Sources */,
+				03FAFDFB1F0FAFE900F6AA3A /* Frameworks */,
+				03FAFDFC1F0FAFE900F6AA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreboardApp;
+			productName = ScoreboardApp;
+			productReference = 03FAFDFE1F0FAFE900F6AA3A /* ScoreboardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03FAFE111F0FAFE900F6AA3A /* ScoreboardAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FAFE291F0FAFE900F6AA3A /* Build configuration list for PBXNativeTarget "ScoreboardAppTests" */;
+			buildPhases = (
+				03FAFE0E1F0FAFE900F6AA3A /* Sources */,
+				03FAFE0F1F0FAFE900F6AA3A /* Frameworks */,
+				03FAFE101F0FAFE900F6AA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FAFE141F0FAFE900F6AA3A /* PBXTargetDependency */,
+			);
+			name = ScoreboardAppTests;
+			productName = ScoreboardAppTests;
+			productReference = 03FAFE121F0FAFE900F6AA3A /* ScoreboardAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03FAFE1C1F0FAFE900F6AA3A /* ScoreboardAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FAFE2C1F0FAFE900F6AA3A /* Build configuration list for PBXNativeTarget "ScoreboardAppUITests" */;
+			buildPhases = (
+				03FAFE191F0FAFE900F6AA3A /* Sources */,
+				03FAFE1A1F0FAFE900F6AA3A /* Frameworks */,
+				03FAFE1B1F0FAFE900F6AA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FAFE1F1F0FAFE900F6AA3A /* PBXTargetDependency */,
+			);
+			name = ScoreboardAppUITests;
+			productName = ScoreboardAppUITests;
+			productReference = 03FAFE1D1F0FAFE900F6AA3A /* ScoreboardAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03FAFDF61F0FAFE800F6AA3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Josh Maloney";
+				TargetAttributes = {
+					03FAFDFD1F0FAFE900F6AA3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					03FAFE111F0FAFE900F6AA3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03FAFDFD1F0FAFE900F6AA3A;
+					};
+					03FAFE1C1F0FAFE900F6AA3A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03FAFDFD1F0FAFE900F6AA3A;
+					};
+				};
+			};
+			buildConfigurationList = 03FAFDF91F0FAFE800F6AA3A /* Build configuration list for PBXProject "ScoreboardApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03FAFDF51F0FAFE800F6AA3A;
+			productRefGroup = 03FAFDFF1F0FAFE900F6AA3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03FAFDFD1F0FAFE900F6AA3A /* ScoreboardApp */,
+				03FAFE111F0FAFE900F6AA3A /* ScoreboardAppTests */,
+				03FAFE1C1F0FAFE900F6AA3A /* ScoreboardAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03FAFDFC1F0FAFE900F6AA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAFE0C1F0FAFE900F6AA3A /* LaunchScreen.storyboard in Resources */,
+				03FAFE091F0FAFE900F6AA3A /* Assets.xcassets in Resources */,
+				03FAFE071F0FAFE900F6AA3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAFE101F0FAFE900F6AA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAFE1B1F0FAFE900F6AA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03FAFDFA1F0FAFE900F6AA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAFE041F0FAFE900F6AA3A /* ViewController.swift in Sources */,
+				03FAFE021F0FAFE900F6AA3A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAFE0E1F0FAFE900F6AA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAFE171F0FAFE900F6AA3A /* ScoreboardAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FAFE191F0FAFE900F6AA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FAFE221F0FAFE900F6AA3A /* ScoreboardAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03FAFE141F0FAFE900F6AA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FAFDFD1F0FAFE900F6AA3A /* ScoreboardApp */;
+			targetProxy = 03FAFE131F0FAFE900F6AA3A /* PBXContainerItemProxy */;
+		};
+		03FAFE1F1F0FAFE900F6AA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FAFDFD1F0FAFE900F6AA3A /* ScoreboardApp */;
+			targetProxy = 03FAFE1E1F0FAFE900F6AA3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03FAFE051F0FAFE900F6AA3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FAFE061F0FAFE900F6AA3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03FAFE0A1F0FAFE900F6AA3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FAFE0B1F0FAFE900F6AA3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03FAFE241F0FAFE900F6AA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03FAFE251F0FAFE900F6AA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03FAFE271F0FAFE900F6AA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreboardApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		03FAFE281F0FAFE900F6AA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreboardApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		03FAFE2A1F0FAFE900F6AA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScoreboardAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreboardApp.app/ScoreboardApp";
+			};
+			name = Debug;
+		};
+		03FAFE2B1F0FAFE900F6AA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScoreboardAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreboardApp.app/ScoreboardApp";
+			};
+			name = Release;
+		};
+		03FAFE2D1F0FAFE900F6AA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ScoreboardAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ScoreboardApp;
+			};
+			name = Debug;
+		};
+		03FAFE2E1F0FAFE900F6AA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ScoreboardAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ScoreboardApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03FAFDF91F0FAFE800F6AA3A /* Build configuration list for PBXProject "ScoreboardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FAFE241F0FAFE900F6AA3A /* Debug */,
+				03FAFE251F0FAFE900F6AA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03FAFE261F0FAFE900F6AA3A /* Build configuration list for PBXNativeTarget "ScoreboardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FAFE271F0FAFE900F6AA3A /* Debug */,
+				03FAFE281F0FAFE900F6AA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03FAFE291F0FAFE900F6AA3A /* Build configuration list for PBXNativeTarget "ScoreboardAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FAFE2A1F0FAFE900F6AA3A /* Debug */,
+				03FAFE2B1F0FAFE900F6AA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03FAFE2C1F0FAFE900F6AA3A /* Build configuration list for PBXNativeTarget "ScoreboardAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FAFE2D1F0FAFE900F6AA3A /* Debug */,
+				03FAFE2E1F0FAFE900F6AA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03FAFDF61F0FAFE800F6AA3A /* Project object */;
+}
