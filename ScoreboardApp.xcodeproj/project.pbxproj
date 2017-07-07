@@ -14,6 +14,7 @@
 		03FAFE0C1F0FAFE900F6AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FAFE0A1F0FAFE900F6AA3A /* LaunchScreen.storyboard */; };
 		03FAFE171F0FAFE900F6AA3A /* ScoreboardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE161F0FAFE900F6AA3A /* ScoreboardAppTests.swift */; };
 		03FAFE221F0FAFE900F6AA3A /* ScoreboardAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE211F0FAFE900F6AA3A /* ScoreboardAppUITests.swift */; };
+		03FAFE301F0FB28100F6AA3A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAFE2F1F0FB28100F6AA3A /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		03FAFE1D1F0FAFE900F6AA3A /* ScoreboardAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FAFE211F0FAFE900F6AA3A /* ScoreboardAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardAppUITests.swift; sourceTree = "<group>"; };
 		03FAFE231F0FAFE900F6AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FAFE2F1F0FB28100F6AA3A /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				03FAFE011F0FAFE900F6AA3A /* AppDelegate.swift */,
 				03FAFE031F0FAFE900F6AA3A /* ViewController.swift */,
 				03FAFE051F0FAFE900F6AA3A /* Main.storyboard */,
+				03FAFE2F1F0FB28100F6AA3A /* Data.swift */,
 				03FAFE081F0FAFE900F6AA3A /* Assets.xcassets */,
 				03FAFE0A1F0FAFE900F6AA3A /* LaunchScreen.storyboard */,
 				03FAFE0D1F0FAFE900F6AA3A /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FAFE041F0FAFE900F6AA3A /* ViewController.swift in Sources */,
+				03FAFE301F0FB28100F6AA3A /* Data.swift in Sources */,
 				03FAFE021F0FAFE900F6AA3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
