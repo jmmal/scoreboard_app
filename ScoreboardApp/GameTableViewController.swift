@@ -11,7 +11,7 @@ import SpriteKit
 
 class GameTableViewController: UITableViewController {
     //MARK: Properties
-    var games = [Game]()
+    var games = [GameScore]()
     var teams = [String: Team]()
     var logos = [UIImage]()
     
@@ -47,13 +47,15 @@ class GameTableViewController: UITableViewController {
         // Fetches the appropriate meal for the data source layout
         let game = games[indexPath.row]
         
-        let home = teams[(game.homeTeam.Abbreviation?.lowercased())!]
-        let away = teams[(game.awayTeam.Abbreviation?.lowercased())!]
+        let home = teams[(game.game.homeTeam.Abbreviation?.lowercased())!]
+        let away = teams[(game.game.awayTeam.Abbreviation?.lowercased())!]
 
         cell.homeTeamLabel.text = home?.nickname
         cell.awayTeamLabel.text = away?.nickname
         cell.homeTeamLogo.image = home?.teamLogo
         cell.awayTeamLogo.image = away?.teamLogo
+        cell.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+        loadInnings(cell: cell, game: game)
         
         return cell
     }
@@ -139,18 +141,17 @@ class GameTableViewController: UITableViewController {
                 logos.append(logoImage)
             }
         }
-        
     }
     
     private func loadGames() -> Void {
-//        let url = URL(string: "https://api.mysportsfeeds.com/v1.2/pull/mlb/2017-regular/scoreboard.json?fordate=20170620")
+//        let urlString = "https://api.mysportsfeeds.com/v1.2/pull/mlb/2017-regular/scoreboard.json?fordate=20170510"
+//        let urlComponents = URLComponents(string: urlString)
 //
-//        let urlRequest = URLRequest(url: url!)
+//        var request = URLRequest(url: (urlComponents?.url)!)
+//        request.httpMethod = "GET"
+//        request.setValue("Basic am1tYWw6bnFYLXdRNC1XdGMtcTlF", forHTTPHeaderField: "Authorization")
 //
-//        let session = URLSession.shared
-//        let task = session.dataTask(with: urlRequest) {
-//            (data, response, error) in
-//
+//        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
 //            guard error == nil else {
 //                print("Error")
 //                return
@@ -160,58 +161,78 @@ class GameTableViewController: UITableViewController {
 //                print("Error: did not recieve data")
 //                return
 //            }
-//
-//            do {
-////                print(data)
-//                let decoder = JSONDecoder()
-//                let product = try decoder.decode(Json4Swift_Base.self, from: responseData)
-//                for game in product.league.games {
-//                    self.scores.append(game.game)
-//                }
-//
-//                DispatchQueue.main.sync {
-//                    self.tableView.reloadData()
-//                }
-//            } catch {
-//                print("Error converting data")
+        
+        do {
+            // Read from file
+            print("trying to read")
+            let url = Bundle.main.url(forResource:"data", withExtension: "json")
+            let data = try Data(contentsOf: url!)
+            print(String(describing: data))
+//            let jsonData = try JSONEncoder().encode(data)
+            
+            
+            // Dont touch below here
+            let decoder = JSONDecoder()
+            let scores = try decoder.decode(Json4Swift_Base.self, from: data)
+            for game in scores.scoreboard.gameScore {
+                self.games.append(game)
+            }
+        
+//            DispatchQueue.main.sync {
+//                self.tableView.reloadData()
 //            }
+            
+        } catch {
+            print("Error converting data")
+        }
 //        }
 //        task.resume()
-        //https://api.mysportsfeeds.com/v1.2/pull/mlb/2017-regular/scoreboard.json?fordate=20170510
-        let urlString = "https://api.mysportsfeeds.com/v1.2/pull/mlb/2017-regular/scoreboard.json?fordate=20170510"
-        let urlComponents = URLComponents(string: urlString)
-        
-        var request = URLRequest(url: (urlComponents?.url)!)
-        request.httpMethod = "GET"
-        request.setValue("Basic am1tYWw6bnFYLXdRNC1XdGMtcTlF", forHTTPHeaderField: "Authorization")
-        
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard error == nil else {
-                print("Error")
-                return
-            }
-
-            guard let responseData = data else {
-                print("Error: did not recieve data")
-                return
-            }
-
-            do {
-                print(responseData)
-                let decoder = JSONDecoder()
-                let scores = try decoder.decode(Json4Swift_Base.self, from: responseData)
-                for game in scores.scoreboard.gameScore {
-                    self.games.append(game.game)
-                }
-                
-                DispatchQueue.main.sync {
-                    self.tableView.reloadData()
-                }
-            } catch {
-                print("Error converting data")
-            }
-        }
-        task.resume()
     }
-
+    
+    private func loadInnings(cell: GameTableViewCell, game: GameScore) {        
+        for view in cell.awayInnings.subviews {
+            view.removeFromSuperview()
+        }
+        
+        for view in cell.inningNumber.subviews {
+            view.removeFromSuperview()
+        }
+        
+        for view in cell.homeInnings.subviews {
+            view.removeFromSuperview()
+        }
+        
+        
+        for (index, inning) in game.inningSummary.inning.enumerated() {
+            // Add inning number
+            let inningLabel = UILabel()
+            inningLabel.text = String(describing: index + 1)
+            inningLabel.font = inningLabel.font.withSize(12.0)
+            inningLabel.textAlignment = .center
+            
+            // Add away label
+            let awayLabel = UILabel()
+            awayLabel.text = String(describing: inning.awayScore)
+            awayLabel.font = awayLabel.font.withSize(12.0)
+            awayLabel.textAlignment = .center
+//            awayLabel.translatesAutoresizingMaskIntoConstraints = false
+//            awayLabel.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
+//            awayLabel.widthAnchor.constraint(equalToConstant: 20.0).isActive = true
+            
+            // Add home label
+            let homeLabel = UILabel()
+            homeLabel.text = String(describing: inning.awayScore)
+            homeLabel.font = homeLabel.font.withSize(12.0)
+            homeLabel.textAlignment = .center
+//            homeLabel.translatesAutoresizingMaskIntoConstraints = false
+//            homeLabel.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
+//            homeLabel.widthAnchor.constraint(equalToConstant: 20.0).isActive = true
+            
+            cell.inningNumber.addArrangedSubview(inningLabel)
+            cell.awayInnings.addArrangedSubview(awayLabel)
+            cell.homeInnings.addArrangedSubview(homeLabel)
+        }
+        
+        
+    }
 }

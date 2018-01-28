@@ -14,8 +14,9 @@ class GameTableViewCell: UITableViewCell {
     @IBOutlet weak var homeTeamLabel: UILabel!
     @IBOutlet weak var awayTeamLogo: UIImageView!
     @IBOutlet weak var homeTeamLogo: UIImageView!
-    @IBOutlet weak var inningsCell: UICollectionViewCell!
-    
+    @IBOutlet weak var awayInnings: UIStackView!
+    @IBOutlet weak var homeInnings: UIStackView!
+    @IBOutlet weak var inningNumber: UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,5 +28,5 @@ class GameTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

@@ -16,6 +16,8 @@
 		030F8A69201D88B80057719B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 030F8A68201D88B80057719B /* data.json */; };
 		031BA4C8201C2A7000A6AEDB /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031BA4C7201C2A7000A6AEDB /* GameTableViewCell.swift */; };
 		031BA4CA201C2A8900A6AEDB /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031BA4C9201C2A8900A6AEDB /* GameTableViewController.swift */; };
+		035F4E93201DC4FA00C06205 /* InningSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035F4E92201DC4FA00C06205 /* InningSummary.swift */; };
+		035F4E95201DC52000C06205 /* Inning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035F4E94201DC52000C06205 /* Inning.swift */; };
 		0397EF78201C5599007F7ED5 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397EF77201C5599007F7ED5 /* Team.swift */; };
 		0397EF7B201C7F62007F7ED5 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397EF79201C7F62007F7ED5 /* Json4Swift_Base.swift */; };
 		0397EF7E201C7F92007F7ED5 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397EF7D201C7F92007F7ED5 /* GameScore.swift */; };
@@ -56,6 +58,8 @@
 		030F8A68201D88B80057719B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		031BA4C7201C2A7000A6AEDB /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		031BA4C9201C2A8900A6AEDB /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
+		035F4E92201DC4FA00C06205 /* InningSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InningSummary.swift; sourceTree = "<group>"; };
+		035F4E94201DC52000C06205 /* Inning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inning.swift; sourceTree = "<group>"; };
 		0397EF77201C5599007F7ED5 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		0397EF79201C7F62007F7ED5 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json4Swift_Base.swift; path = ../../../Downloads/codegen_5a6c3c8dbbd9d/Json4Swift_Base.swift; sourceTree = "<group>"; };
 		0397EF7D201C7F92007F7ED5 /* GameScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScore.swift; path = ../../../Downloads/codegen_5a6c3c8dbbd9d/GameScore.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				03FAFE031F0FAFE900F6AA3A /* ViewController.swift */,
 				030F8A64201D78760057719B /* Innings.swift */,
 				0397EF7D201C7F92007F7ED5 /* GameScore.swift */,
+				035F4E92201DC4FA00C06205 /* InningSummary.swift */,
+				035F4E94201DC52000C06205 /* Inning.swift */,
 				0397EF79201C7F62007F7ED5 /* Json4Swift_Base.swift */,
 				03CB3F7C201CB27F00F53CCB /* Scoreboard.swift */,
 				03FAFE051F0FAFE900F6AA3A /* Main.storyboard */,
@@ -309,9 +315,11 @@
 				03009BE2201CBDE70031C9CC /* HomeTeam.swift in Sources */,
 				03009BE1201CBDE70031C9CC /* AwayTeam.swift in Sources */,
 				031BA4C8201C2A7000A6AEDB /* GameTableViewCell.swift in Sources */,
+				035F4E93201DC4FA00C06205 /* InningSummary.swift in Sources */,
 				0397EF7E201C7F92007F7ED5 /* GameScore.swift in Sources */,
 				03FAFE041F0FAFE900F6AA3A /* ViewController.swift in Sources */,
 				03009BE4201D44A00031C9CC /* SpriteSheet.swift in Sources */,
+				035F4E95201DC52000C06205 /* Inning.swift in Sources */,
 				030F8A61201D68160057719B /* Scoring.swift in Sources */,
 				031BA4CA201C2A8900A6AEDB /* GameTableViewController.swift in Sources */,
 				03FAFE021F0FAFE900F6AA3A /* AppDelegate.swift in Sources */,
@@ -487,7 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -501,7 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maloney.ScoreboardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
