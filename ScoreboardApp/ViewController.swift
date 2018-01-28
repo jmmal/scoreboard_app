@@ -10,18 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //MARK: Properties
-    
-    @IBOutlet weak var awayTeam: UILabel!
-    @IBOutlet weak var homeTeam: UILabel!
-    
-    private let gamesModel = Games()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        
     }
 
 
@@ -30,14 +21,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    //MARK: Private Functions
-    private func listGames() {
-        awayTeam.text = "Red Sox"
-        homeTeam.text = "Yankees"
-    }
-    
-    
-
 }
 
