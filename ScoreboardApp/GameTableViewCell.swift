@@ -17,6 +17,8 @@ class GameTableViewCell: UITableViewCell {
     @IBOutlet weak var awayInnings: UIStackView!
     @IBOutlet weak var homeInnings: UIStackView!
     @IBOutlet weak var inningNumber: UIStackView!
+    @IBOutlet weak var totals: UIStackView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

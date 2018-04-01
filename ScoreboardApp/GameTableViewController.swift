@@ -47,14 +47,16 @@ class GameTableViewController: UITableViewController {
         // Fetches the appropriate meal for the data source layout
         let game = games[indexPath.row]
         
-        let home = teams[(game.game.homeTeam.Abbreviation?.lowercased())!]
-        let away = teams[(game.game.awayTeam.Abbreviation?.lowercased())!]
+//        let home = teams[(game.game.homeTeam.Abbreviation?.lowercased())!]
+//        let away = teams[(game.game.awayTeam.Abbreviation?.lowercased())!]
 
-        cell.homeTeamLabel.text = home?.nickname
-        cell.awayTeamLabel.text = away?.nickname
-        cell.homeTeamLogo.image = home?.teamLogo
-        cell.awayTeamLogo.image = away?.teamLogo
-        cell.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+//        cell.homeTeamLabel.text = home?.nickname
+//        cell.awayTeamLabel.text = away?.nickname
+//        cell.homeTeamLogo.image = home?.teamLogo
+//        cell.awayTeamLogo.image = away?.teamLogo
+//        cell.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+        
+        loadTotals(cell: cell, game: game)
         loadInnings(cell: cell, game: game)
         
         return cell
@@ -164,11 +166,8 @@ class GameTableViewController: UITableViewController {
         
         do {
             // Read from file
-            print("trying to read")
             let url = Bundle.main.url(forResource:"data", withExtension: "json")
             let data = try Data(contentsOf: url!)
-            print(String(describing: data))
-//            let jsonData = try JSONEncoder().encode(data)
             
             
             // Dont touch below here
@@ -187,6 +186,33 @@ class GameTableViewController: UITableViewController {
         }
 //        }
 //        task.resume()
+    }
+    
+    private func loadTotals(cell: GameTableViewCell, game: GameScore) {
+        for view in cell.totals.subviews {
+            view.removeFromSuperview()
+        }
+        
+        let rLabel = UILabel()
+        let hLabel = UILabel()
+        let eLabel = UILabel()
+        
+        rLabel.text = "R"
+        hLabel.text = "H"
+        eLabel.text = "E"
+        
+        rLabel.font = rLabel.font.withSize(12.0)
+        hLabel.font = hLabel.font.withSize(12.0)
+        eLabel.font = eLabel.font.withSize(12.0)
+        
+        rLabel.textAlignment = .center
+        hLabel.textAlignment = .center
+        eLabel.textAlignment = .center
+        
+        cell.totals.addArrangedSubview(rLabel)
+        cell.totals.addArrangedSubview(hLabel)
+        cell.totals.addArrangedSubview(eLabel)
+        
     }
     
     private func loadInnings(cell: GameTableViewCell, game: GameScore) {        
@@ -208,26 +234,39 @@ class GameTableViewController: UITableViewController {
             let inningLabel = UILabel()
             inningLabel.text = String(describing: index + 1)
             inningLabel.font = inningLabel.font.withSize(12.0)
+            inningLabel.textColor = .lightGray
             inningLabel.textAlignment = .center
-            
+
             // Add away label
             let awayLabel = UILabel()
             awayLabel.text = String(describing: inning.awayScore)
             awayLabel.font = awayLabel.font.withSize(12.0)
+
+            if awayLabel.text == "0" {
+                awayLabel.textColor = .lightGray
+            } else {
+                awayLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+            }
+
             awayLabel.textAlignment = .center
 //            awayLabel.translatesAutoresizingMaskIntoConstraints = false
 //            awayLabel.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
 //            awayLabel.widthAnchor.constraint(equalToConstant: 20.0).isActive = true
-            
+
             // Add home label
             let homeLabel = UILabel()
-            homeLabel.text = String(describing: inning.awayScore)
+            homeLabel.text = String(describing: inning.homeScore)
             homeLabel.font = homeLabel.font.withSize(12.0)
+            if homeLabel.text == "0" {
+                homeLabel.textColor = .lightGray
+            } else {
+                homeLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+            }
             homeLabel.textAlignment = .center
 //            homeLabel.translatesAutoresizingMaskIntoConstraints = false
 //            homeLabel.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
 //            homeLabel.widthAnchor.constraint(equalToConstant: 20.0).isActive = true
-            
+
             cell.inningNumber.addArrangedSubview(inningLabel)
             cell.awayInnings.addArrangedSubview(awayLabel)
             cell.homeInnings.addArrangedSubview(homeLabel)

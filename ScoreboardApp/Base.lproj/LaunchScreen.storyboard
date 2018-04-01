@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,23 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseball-field" translatesAutoresizingMaskIntoConstraints="NO" id="iXE-dW-vLO">
+                                <rect key="frame" x="68" y="213" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="9N9-I9-bYQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="OAa-wi-nj1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iXE-dW-vLO" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="193" id="5hn-Vc-CT2"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iXE-dW-vLO" secondAttribute="bottom" constant="214" id="FuK-Ua-G2P"/>
+                            <constraint firstItem="iXE-dW-vLO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Icn-yZ-hcw"/>
+                            <constraint firstItem="iXE-dW-vLO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="51.359999999999999" id="a6g-4d-EBL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iXE-dW-vLO" secondAttribute="trailing" constant="51.640000000000001" id="hnX-6j-efj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +45,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baseball-field" width="512" height="512"/>
+    </resources>
 </document>
